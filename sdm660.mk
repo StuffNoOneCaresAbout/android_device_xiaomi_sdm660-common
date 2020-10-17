@@ -230,11 +230,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.qcom
 
-# fwk-detect
-PRODUCT_PACKAGES += \
-    libqti_vndfwk_detect \
-    libqti_vndfwk_detect.vendor
-
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
@@ -279,15 +274,6 @@ PRODUCT_PACKAGES += \
 # IFAA JAR
 PRODUCT_BOOT_JARS += \
     org.ifaa.android.manager
-
-# IMS
-PRODUCT_PACKAGES += \
-    ims-ext-common_system \
-    ims_ext_common.xml \
-
-# IMS JAR
-PRODUCT_BOOT_JARS += \
-    ims-ext-common_system
 
 # Init
 PRODUCT_PACKAGES += \
@@ -481,16 +467,7 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     libxml2 \
     libprotobuf-cpp-full \
-    qti-telephony-hidl-wrapper \
-    qti_telephony_hidl_wrapper.xml \
-    qti-telephony-utils \
-    qti_telephony_utils.xml \
-    rild \
-    telephony-ext
-
-# RIL JAR
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+    rild
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
